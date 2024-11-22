@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: white;
+    color: #333;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+}
+
+header .logo-image {
+    margin-left: 100px;
+    height: 23px;
+    width: 89px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin-left: auto;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+header .login-btn {
+    width: 58px;
+    height: 33px;
+    background-color: #fff;
+    font-size: 11px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-right: 70px;
+    cursor: pointer;
+}
+
+main {
+    text-align: center;
+    padding: 40px 20px;
+    max-width: 1280px;
+}
+
+main h1 {
+    height: 32px;
+    width: 578px;
+    font-weight: 700;
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-left: 340px; 
+}
+
+.converter {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+   margin-left: 150px;
+}
+
+.input-section,
+.output-section {
+    padding: 20px;
+    width: 280px;
+    text-align: left;
+}
+
+.input-section p,
+.output-section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.currency-tabs {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.currency-tabs button {
+    padding: 8px 15px;
+    border: 1px solid rgb(216, 214, 214);
+    cursor: pointer;
+    color: #333;
+    font-size: 14px;
+    background-color: white;
+}
+
+.new {
+    width: 248px;
+    border: 1px solid rgb(212, 210, 210);
+  
+}
+
+.currency-tabs .active {
+    background-color: #6e2eb8;
+    border: 1px solid rgb(216, 214, 214);
+    color: #fff;
+}
+
+.amount-input {
+    width: 240px;
+    font-size: 20px;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.amount-input:focus {
+    outline: none;
+}
+
+.rate {
+    font-size: 7px;
+    color: #999;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+@media (max-width: 990px) {
+    header .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    header .logo-image {
+        margin-left: 30px;
+        height: 18px;
+        width: 75px;
+    }
+    header {
+        flex-wrap: wrap;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    header .logo {
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    header nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 10px 0;
+    }
+
+    header nav ul li {
+        margin: 10px;
+    }
+
+    header .login-btn {
+        margin: 10px auto;
+    }
+
+    main h1 {
+        font-size: 24px;
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .converter {
+        flex-direction: column; 
+        align-items: center; 
+        margin: 0 auto;
+        gap: 20px;
+    }
+
+    .input-section,
+    .output-section {
+        width: 100%; 
+        max-width: 300px;
+        text-align: center; 
+    }
+
+    .currency-tabs {
+        justify-content: space-evenly;
+    }
+
+ 
+}
+
+@media (max-width: 320px) {
+    header .logo {
+        display: flex;
+        align-items: center;
+    }
+    
+    header .logo-image {
+        margin-left: 20px;
+        height: 15px;
+        width: 65px;
+    }
+    header {
+        padding: 10px;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+
+    main h1 {
+        font-size: 20px;
+        margin: 15px 0;
+    }
+
+    .converter {
+        gap: 10px;
+    }
+
+    .input-section,
+    .output-section {
+        max-width: 250px;
+    }
+}
+
+
+
+
+
+  
+
+  
+  
